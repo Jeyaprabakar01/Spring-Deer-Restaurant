@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-  <title>Ristorante Con Fusion</title>
+  <title>Spring Deer Restaurant</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41" alt="Ristorante Con Fusion"></a>
+      
       <div class="collapse navbar-collapse" id="Navbar">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -43,7 +43,7 @@
           <h4 class="modal-title">Login </h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        <div class="modal-body" style="background-color:#9575CD;">
+        <div class="modal-body" style="background-color: #4dc3ff;">
           <form>
             <div class="form-row">
               <div class="form-group col-sm-4">
@@ -79,7 +79,7 @@
           <h5 class="modal-title">Reserve a Table</h5>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        <div class="modal-body" style="background-color:#9575CD;">
+        <div class="modal-body" style="background-color:#4dc3ff;">
           <form>
             <div class="form-group row">
               <label class="col-12 col-sm-2">Number of Guests</label>
@@ -144,12 +144,10 @@
     <div class="container">
       <div class="row row-header">
         <div class="col-12 col-sm-6">
-          <h1>Ristorante con Fusion</h1>
+          <h1>Spring Deer Restaurant</h1>
           <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
         </div>
-        <div class="col-12 col-sm-3 text-center align-self-center">
-          <img src="img/logo.png" class="img-fluid" alt="Ristorante con Fusion">
-        </div>
+         
         <div class="col-12 mt-5 mt-sm-0 col-sm-3 text-center align-self-center">
           <button type="button" class="btn btn-block nav-link btn-warning" id="reserveButton">Reserve table</button>
         </div>
@@ -273,7 +271,7 @@
             HONG KONG<br>
             <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
             <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-            <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+            <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:springdeer@food.net">springdeer@food.net</a>
           </address>
         </div>
         <div class="col-12 col-sm-4 align-self-center">
@@ -289,7 +287,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-auto">
-          <p>© Copyright 2021 Ristorante Con Fusion</p>
+          <p>© Copyright 2021 Spring Deer Restaurant</p>
         </div>
       </div>
     </div>
@@ -299,31 +297,7 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $("#mycarousel").carousel({
-        interval: 2000
-      });
-      $("#carouselButton").click(function() {
-        if ($("#carouselButton").children('span').hasClass('fa-pause')) {
-          $("#mycarousel").carousel('pause');
-          $("#carouselButton").children('span').removeClass('fa-pause');
-          $("#carouselButton").children('span').addClass('fa-play');
-        } else {
-          $("#mycarousel").carousel('cycle');
-          $("#carouselButton").children('span').removeClass('fa-play');
-          $("#carouselButton").children('span').addClass('fa-pause');
-        }
-      });
-      $('#loginButton').click(function() {
-        $('#loginModal').modal('show');
-      });
-      $('#reserveButton').click(function() {
-        $('#reservationModal').modal('show');
-      });
-
-    });
-  </script>
+  <script src="js/scripts.js"></script>
 
 </body>
 
